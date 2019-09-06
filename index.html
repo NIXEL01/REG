@@ -1,24 +1,23 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>CONTACT FORM</title>
-        <link rel="stylesheet" href="nix.css">
+        <link rel="stylesheet" href="Nix.css">
     
     </head>
     
     <body>
+        <fieldset>
         <form>
             <table>
                 <tr>
                     <td>
                         Name:
-                     </tr>
                     </td>
-                    <tr>
                     <td>
-                        <input type="text"placeholder="Name" name="">
-                   </tr>
-                   </td>
+                        <input type="text"placeholder="Name" minlength="4" maxlength="24" required name="">
+                    </td>
+                </tr>
+               
                 <tr>
                     <td>
                         <input type="radio" name="Gender">Male
@@ -30,7 +29,7 @@
                             Email :
                         </td>      
                         <td>
-                            <input type="mail" placeholder ="Email" name="">
+                            <input type="mail" required placeholder ="Email" name="">
                         </td>                  
                     </tr>
                     <tr>
@@ -54,14 +53,14 @@
                                 Title:
                             </td>
                             <td>
-                                    <input class="B" type="Title" placeholder="Title" name="">
+                                    <input class="B" type="Title" placeholder="Title" maxlength="15" name="">
                             </td>
                             <tr>
                             <td>
                                 Message:
                             </td>
                                 <td>
-                                        <input class="A" type="message" placeholder="Message" name="">                               
+                                        <input class="A" type="message" placeholder="Message" minlength="20" required name="">                               
                             </td>
                         </tr>
                     </tr>
@@ -70,7 +69,9 @@
                             <input type="submit" value="submit" name="">
                         </td>
                     </tr>
+                </fieldset>
             </table>
         </form>
-     <footer>NIXEL</footer>
-    </html>
+    </body>
+    <footer>Nixel</footer>
+</html>
